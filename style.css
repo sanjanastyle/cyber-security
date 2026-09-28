@@ -1,0 +1,817 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f8fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 18px 7%;
+    background: #07152f;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #00d4ff;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #00d4ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(120deg,
+            #07152f,
+            #0c2b52);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #00d4ff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 70px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00d4ff;
+}
+
+.hero-content>p:not(.small-title) {
+    color: #d7e5f5;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 13px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.primary {
+    background: #00d4ff;
+    color: #07152f;
+}
+
+.secondary {
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 440px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 5px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   HELPLINE
+========================= */
+
+.helpline {
+    padding: 25px 7%;
+    background: #00b894;
+}
+
+.helpline-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    color: white;
+}
+
+.phone-icon {
+    font-size: 45px;
+}
+
+.helpline p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.helpline h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.report-btn {
+    background: white;
+    color: #008f73;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    padding: 90px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading p {
+    color: #008fba;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin: 8px 0 12px;
+}
+
+.section-heading span {
+    color: #667085;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-box {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+}
+
+.intro-box>div:first-child {
+    background: white;
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.intro-box h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.intro-box p {
+    color: #667085;
+    margin-bottom: 15px;
+}
+
+.security-card {
+    background: #07152f;
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.security-card p {
+    color: #b7c8dc;
+}
+
+.lock {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FRAUD SECTION
+========================= */
+
+.fraud-section {
+    padding: 90px 7%;
+    background: #edf3f9;
+}
+
+.fraud-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fraud-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.fraud-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.fraud-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e7f8fc;
+
+    border-radius: 15px;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.fraud-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.fraud-card p {
+    color: #667085;
+    margin-bottom: 15px;
+}
+
+.fraud-card strong {
+    display: block;
+    color: #e63946;
+    font-size: 13px;
+}
+
+.fraud-card>span {
+    color: #555;
+    font-size: 13px;
+}
+
+
+/* =========================
+   IMAGE BANNER
+========================= */
+
+.image-section {
+    min-height: 360px;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(rgba(4, 20, 45, 0.82),
+            rgba(4, 20, 45, 0.82)),
+        url("https://cdnbbsr.s3waas.gov.in/s3dcf6070a4ab7f3afbfd2809173e0824b/uploads/2025/06/202506061444135532.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.image-section div {
+    max-width: 700px;
+}
+
+.image-section h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.image-section p {
+    color: #dce8f4;
+    font-size: 17px;
+}
+
+
+/* =========================
+   RULES
+========================= */
+
+.rules-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.rule {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    display: flex;
+    gap: 20px;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+}
+
+.rule>span {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #07152f;
+    color: #00d4ff;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+}
+
+.rule h3 {
+    margin-bottom: 5px;
+}
+
+.rule p {
+    color: #667085;
+}
+
+
+/* =========================
+   PRECAUTIONS
+========================= */
+
+.precautions {
+    padding: 90px 7%;
+    background: #07152f;
+    color: white;
+}
+
+.precautions .section-heading p {
+    color: #00d4ff;
+}
+
+.precautions .section-heading span {
+    color: #b7c8dc;
+}
+
+.precaution-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.precaution-card {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 18px;
+}
+
+.precaution-card>div {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.precaution-card h3 {
+    margin-bottom: 10px;
+}
+
+.precaution-card p {
+    color: #b7c8dc;
+    font-size: 14px;
+}
+
+
+/* =========================
+   REPORT FORM
+========================= */
+
+.report-section {
+    padding: 90px 7%;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: auto;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d7dee8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    background: #f9fbfd;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #00b8d9;
+}
+
+.checkbox {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    color: #667085;
+}
+
+.checkbox input {
+    margin-top: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #07152f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #00a9d4;
+}
+
+
+/* =========================
+   EMERGENCY
+========================= */
+
+.emergency {
+    padding: 30px 7%;
+}
+
+.emergency-card {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 35px 40px;
+
+    border-radius: 20px;
+
+    background: #e63946;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.emergency-card p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.emergency-card h2 {
+    font-size: 32px;
+}
+
+.emergency-card a {
+    padding: 15px 25px;
+
+    background: white;
+
+    color: #d62839;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+
+    padding: 50px 7%;
+
+    background: #030b1c;
+
+    text-align: center;
+
+    color: white;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+footer>p {
+    color: #9fb0c5;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .intro-box {
+        grid-template-columns: 1fr;
+    }
+
+    .fraud-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .precaution-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .helpline-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section,
+    .fraud-section,
+    .report-section,
+    .precautions {
+        padding: 65px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .fraud-grid,
+    .rules-grid,
+    .precaution-container,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    .emergency-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-section h2 {
+        font-size: 35px;
+    }
+
+}
